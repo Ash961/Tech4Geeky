@@ -1,0 +1,225 @@
+body{
+    margin: 0 auto;
+    
+}
+header{
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#222B48;
+}
+#logo {
+    display: inline-block;
+    margin-left: 40px;
+    width: 10%;
+    height: 15%;
+    padding: 25px;
+}
+header  #topbar ul{
+    list-style: none;
+}
+header #topbar ul li{
+    position: relative;
+    float: left;
+}
+header #topbar ul li a{
+    transition: 1s;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    padding: 25px;
+}
+
+header #topbar ul li a:hover{
+    cursor: pointer;
+    color:#FF9F55;
+}
+header #topbar ul li ul{
+    display: none;
+    margin-top: 10px;
+    position: absolute;
+    top: 50px;
+    left: -189px;
+    width: 350px;
+    background-color: #222B48;
+}
+header #topbar ul li ul li{
+    width: 100%;    
+    margin-bottom: 20px;
+}
+header #topbar ul li ul li ul{
+    cursor: pointer;
+    left: 200px;
+    top:0;
+}
+header #topbar ul li:hover>ul{
+    display: initial;
+}
+header #topbar ul li:focus-within>ul{
+    display: initial;
+}
+#menu{
+    display: none;
+}
+
+header label{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cover{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+#test{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    
+}
+.Test1{
+    margin-top: 30px;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+#Reels{ 
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+#videos1{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.display{
+    display: none;
+}
+/* Footer */
+
+#footer {
+    border-top: 5px solid #3C4A69 ;
+    padding-top: 8px;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    background-color: #222B48 ;
+    font-family: 'Poppins', sans-serif;
+    font-size:20px ;
+    text-align: center;
+    color: white;
+}
+#footer > P{
+    text-align: center;
+    margin-bottom:15px;
+}
+/* this is for mobile screen */
+
+@media (max-width:991px){
+    #logo{
+        width: 50%;
+        margin: 0 auto;
+    }
+      header{
+        
+        padding: 20px;
+      }
+      header label{
+        display: initial;
+      }
+      header #topbar{
+        position: absolute;
+        top: 105px;
+        left: 0;
+        right: 0;
+        background-color: #222B48;
+        border-top:5px solid #3C4A69 ;
+        display: none;
+    }
+    header #topbar ul li{
+        width: 100%;
+    
+    }
+    header #topbar ul li ul{
+        display: none;
+        margin-top: 10px;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 400px;
+        background-color: #222B48;
+    }
+    header #topbar ul li ul{
+        position: relative; 
+        width: 100%;
+    
+    }
+    header #topbar ul li a:hover{
+        transition: none;
+        cursor: pointer;
+        color: #fff;;
+    } 
+        header #topbar ul li{
+            width: 100%;
+            
+            padding-bottom: 20px;
+        }
+        #menu:checked ~ #topbar{
+            display: initial;
+        }
+.cover{
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+#test{
+    display: flex;
+    text-align: center;
+    flex-direction:column;
+    
+}
+.Test1{
+    margin-top: 0px;
+    width: 360px;
+    height: auto;
+    margin-bottom: 0px;
+}
+#Reels{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#videos1{
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.display{
+    display: block;
+}
+#footer {
+    border-top: 5px solid #3C4A69;
+    padding-top: 8px;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 100%;
+    background-color: #222B48;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px ;
+    text-align: center;
+    color: white;
+}
+#footer > P{
+    text-align: center;
+    margin-bottom:15px;
+}
+}
